@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    gap: 40px;
+}
+.input-m{
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: blue;
+}

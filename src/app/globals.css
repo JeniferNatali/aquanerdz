@@ -1,0 +1,108 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 1rem;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	justify-content: center; /* centraliza o texto*/
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.6rem;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 720px) {
+	html {
+		font-size: 50%;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	html {
+		font-size: 30%;
+	}
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	/*
+	border-width: 0.5rem;
+	border-color: black;
+	border-style: solid; 
+	background-color: aquamsrine;*/
+	border: solid 0.5rem black;
+	margin: 2rem;
+	width: 100%; /*largura*/
+	max-width: 1280px; /*px = pixel*/
+	padding: 2rem;
+}
+
+/* p {
+  font-size: 16px; ou por exemplo tanto no h1 h2 p etc, no lugar de pixel(px) pode ser rem, 
+  mais ai o problema é que tem que fazer o calculo de pixel para rem.
+  colocando o 62,4% se você quer 14px coloca 1.4rem
+} */
