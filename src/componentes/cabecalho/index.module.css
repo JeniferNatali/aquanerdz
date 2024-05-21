@@ -10,31 +10,31 @@
 
 .containerNav .menu {
     max-width: 1168px; /* largura útil + 20 px esq e 20px dir; */ 
-    height: 8.0rem;
+    height: 8.0rem; /*altura*/
     padding: 0.3rem 2rem 0.4rem 2rem; 
-    font-size: 4.4rem; 
-    align-items: center; 
-    justify-content: center; 
+    font-size: 1.1rem; /*tamanho da fonte*/
+    align-items: right; /*align-items*/
+    justify-content: right; 
     display: flex;
 }
 
-.containerNav .menu .icon {
-    color: #B71C1C; 
+/*.containerNav .menu .icon {
+    color: #0fff33; 
     font-size: 4.4rem; 
     user-select: none; 
     /* margin: 0 2rem */
-} 
+/*} */
 
-#titulo {
+/*#titulo {
     user-select: none; 
-    margin: 0 1rem;
+    margin: 0 9rem;
 }
 
 /* #mIco {
     display: none; 
 } */
 
-.containerNav .menu .menuGrande {
+.containerNav .menu .menuGrande { /*deixa a barra no topo*/
     display: flex; 
 }
 
@@ -42,13 +42,13 @@
     border: 0.4rem solid #FAFAFA; 
     width: 12rem; 
     height: 8rem; 
-    background-color: #FAFAFA;
-    color: #B71C1C;
-    text-align: center;
+    background-color: #11ae23; /*cor de fundo da barra cabecalho*/
+    color: #000000; /*cor da letra*/
+    /*text-align: left;*/
     text-decoration: none;
     display: flex; 
     flex-direction: row;
-    justify-content: center; 
+    justify-content: center; /*posição das palavras*/
     align-items: center;
     font-size: 1.6rem; 
     font-weight: bold;
@@ -56,24 +56,24 @@
 } 
 
 .containerNav .menu .menuGrande a:hover { 
-    border: 0.4rem solid #F05545; 
-    color: #F05545;
+   /* border: 0.4rem solid #050100; /*margem de quando passa por cima com mouse*/
+    color: #fafafa; /*cor da letra quando passa o mouse por cima*/
 } 
 
-.containerNav .menu .menuGrande a.active {
-    background-color: #B71C1C;
-    border: 0.4rem solid #B71C1C;
-    color: #FAFAFA;
-}
+/*.containerNav .menu .menuGrande a.active {
+    background-color: #000000;
+    border: 0.4rem solid #ffb700;
+    color: #82ff99;
+}*/
 
 
-.containerNav .menu .menuMobile a { 
+/*.containerNav .menu .menuMobile a { 
     display: none; 
 } 
 
 .containerNav .menuMobileExpandidon { 
     display: none; 
-}
+}*/
 
 .containerNav .menuMobileExpandidos a { 
     display: none; 
