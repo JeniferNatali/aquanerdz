@@ -2,7 +2,7 @@
 import Link from 'next/link'; 
 import { usePathname } from 'next/navigation'; 
 
-import { MdFastfood } from "react-icons/md";
+/*import { MdFastfood } from "react-icons/md";*/
 
 import styles from './index.module.css'; 
 
@@ -13,15 +13,15 @@ export default function Header() {
             <nav className={styles.containerNav}>
                 <div className={styles.menu}>
                     <div>
-                        <MdFastfood className={styles.icon} />
-                        <label id="titulo">BomBurguer</label>
+                        {/*<MdFastfood className={styles.icon} />*/}
+                        {/*<label id="titulo">BomBurguer</label>*/}
                     </div>
                     <div className={styles.menuGrande}>
-                        <Link href={'/'} className={local === '/' ? styles.active : ''}>Home</Link>
-                        <Link href={'/produtos'} className={local === '/produtos' ? styles.active : ''}>Produtos</Link>
-                        <Link href={'/cadusu'} className={local === '/cadusu' ? styles.active : ''}>Cadastrar</Link>
-                        <Link href={'/contato'} className={local === '/contato' ? styles.active : ''}>Contato</Link>
-                        <Link href={'/login'} className={local === '/login' ? styles.active : ''}>Login</Link>
+                        <Link href={'/'} className={local === '/' ? styles.active : ''}>Sair</Link>
+                        {/*<Link href={'/produtos'} className={local === '/produtos' ? styles.active : ''}>Produtos</Link>
+                        <Link href={'/cadusu'} className={local === '/cadusu' ? styles.active : ''}>Cadastrar</Link>*/}
+                        <Link href={'/contato'} className={local === '/meusistema' ? styles.active : ''}>Meu Sistema</Link>
+                        <Link href={'/login'} className={local === '/meuperfil' ? styles.active : ''}>Meu Perfil</Link>
                         {/* <a href="#" className={styles.active}>Login</a> */}
                     </div>
                     {/* <div className="menuMobile">

@@ -1,12 +1,12 @@
-.containerNav { 
+/*.containerNav { 
     display: flex; 
     justify-content: center;
     align-items: center;
-    background-color: #FAFAFA; 
-    color: #B71C1C; 
-    border-bottom: 0.4rem solid #B71C1C; 
+    background-color: #00ff62; 
+    color: #000000; /* titulo do cabecalho*/
+    /*border-bottom: 0.4rem solid #ffffff; 
     font-size: 4.4rem; 
-}
+}*/
 
 .containerNav .menu {
     max-width: 1168px; /* largura útil + 20 px esq e 20px dir; */ 
