@@ -1,9 +1,13 @@
 import Link from 'next/link';
 import styles from './page.module.css';
+import Header from '@/componentes/cabecalho';
 
+<Header/>
 export default function Seusdados () {
     return (
+       
         <div className={styles.container}>
+            
             <h1>Seus dados</h1>
             <div>
             <span>Nome <br /></span>
@@ -21,4 +25,3 @@ export default function Seusdados () {
         
     )
 }
-
