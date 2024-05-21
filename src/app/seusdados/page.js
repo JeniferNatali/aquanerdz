@@ -6,8 +6,8 @@ import Header from '@/componentes/cabecalho';
 export default function Seusdados () {
     return (
         
-        <div className={styles.container}>
-        <Header/>
+        <div className={styles.Header}>
+        <Header />
             <h1>Seus dados</h1>
             <div>
             <span>Nome <br /></span>
@@ -18,7 +18,7 @@ export default function Seusdados () {
             <input /></div>
             
             <div>
-            <span>Telefone</span>
+            <span>Telefone <br /></span>
             <input /></div>
             <p><Link href={'/'}>Voltar</Link></p>
         </div>

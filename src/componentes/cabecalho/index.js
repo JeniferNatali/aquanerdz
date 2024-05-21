@@ -1,45 +1,21 @@
-'use client';
-import Link from 'next/link'; 
-import { usePathname } from 'next/navigation'; 
-
-/*import { MdFastfood } from "react-icons/md";*/
-
+import React from 'react';
 import styles from './index.module.css'; 
 
 export default function Header() {
-    const local = usePathname(); 
-    return (
-        <header>
-            <nav className={styles.containerNav}>
-                <div className={styles.menu}>
-                    <div>
-                        {/*<MdFastfood className={styles.icon} />*/}
-                        {/*<label id="titulo">BomBurguer</label>*/}
-                    </div>
-                    <div className={styles.menuGrande}>
-                        <Link href={'/'} className={local === '/' ? styles.active : ''}>Sair</Link>
-                        {/*<Link href={'/produtos'} className={local === '/produtos' ? styles.active : ''}>Produtos</Link>
-                        <Link href={'/cadusu'} className={local === '/cadusu' ? styles.active : ''}>Cadastrar</Link>*/}
-                        <Link href={'/contato'} className={local === '/meusistema' ? styles.active : ''}>Meu Sistema</Link>
-                        <Link href={'/login'} className={local === '/meuperfil' ? styles.active : ''}>Meu Perfil</Link>
-                        {/* <a href="#" className={styles.active}>Login</a> */}
-                    </div>
-                    {/* <div className="menuMobile">
-                        <a href="javascript:void(0);" className="icon" id="mIco">
-                            <span className="material-icons icon" id="menu">
-                                menu
-                            </span>
-                        </a>
-                    </div>                     */}
-                </div>
-                {/* <div className="menuMobileExpandidon" id="mostraOpMobile">
-                    <a href="../index.html">Home</a>
-                    <a href="../paginas/produtos.html">Produtos</a>
-                    <a href="../paginas/cadUsuario.html">Cadastrar</a>
-                    <a href="../paginas/contato.html">Contato</a>
-                    <a href="#" className={styles.active}>Login</a>
-                </div> */}
-            </nav>
-        </header>
-    );
-}
+  return (
+    <header className="header">
+         <main style={{ marginTop: '10px' }}></main>
+        <div className={styles.header}></div>
+      <div className="left">
+      <div className={styles.header .left}></div>
+        <a href="#logout">Sair</a>
+      </div>
+      <div className="right">
+      <div className={styles.header .right}>
+        <a href="#my-system">Meus Sistemas</a>
+        <a href="#my-profile">Meu Perfil</a>
+        </div>
+      </div>
+    </header>
+  );
+};
